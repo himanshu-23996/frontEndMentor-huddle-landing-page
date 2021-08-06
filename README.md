@@ -16,3 +16,4 @@
 
 ## Topics learnt:
   - Nothing new
+# frontEndMentor-Summary-Component

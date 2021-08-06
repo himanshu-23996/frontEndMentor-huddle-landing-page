@@ -110,21 +110,50 @@ footer {
 }
 
 .icon-holder {
-    padding: 2%;
-    width: 40%;
-    size: 5rem;
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 100%;
+    right: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+span {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1%;
+    margin-right: 2%;
+}
+
+.fb {
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+}
+
+.twt {
+    padding-right: 1.2%;
+    padding-left: 1.2%;
+}
+
+.insta {
+    padding-right: 1.2%;
+    padding-left: 1.2%;
 }
 
 .icon-holder i {
     color: white;
-    border: 1px solid white;
-    size: 5rem;
-    border-radius: 50%;
+    font-size: 1.5rem;
 }
 
-.icon-holder i:hover {
+.icon-holder span:hover {
     cursor: pointer;
-    background-color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.icon-holder span i:hover {
+    cursor: pointer;
     color: hsl(300, 69%, 71%);
 }
 
@@ -199,7 +228,6 @@ footer {
         font-family: 'Poppins', sans-serif;
         font-weight: 200;
     }
-    .right-pane a {}
     .btn {
         margin-top: 8%;
         padding: 4% 1% 4% 1%;
@@ -220,25 +248,50 @@ footer {
         color: white;
     }
     footer {
+        margin-top: 60%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
     .icon-holder {
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    span {
+        border: 1px solid white;
+        border-radius: 50%;
         padding: 2%;
-        width: 40%;
-        size: 5rem;
+        margin-right: 5%;
+    }
+    .fb {
+        padding-right: 3.2%;
+        padding-left: 3.2%;
+    }
+    .twt {
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+    }
+    .insta {
+        padding-right: 2.5%;
+        padding-left: 2.5%;
     }
     .icon-holder i {
         color: white;
-        border: 1px solid white;
-        size: 5rem;
-        border-radius: 50%;
+        font-size: 1.5rem;
     }
-    .icon-holder i:hover {
+    .icon-holder span:hover {
         cursor: pointer;
-        background-color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+    }
+    .icon-holder span i:hover {
+        cursor: pointer;
         color: hsl(300, 69%, 71%);
     }
 }

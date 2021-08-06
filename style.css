@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+*:root {
+    all: unset;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+header {
+    width: 100%;
+}
+
+header img {
+    margin-left: 4%;
+    margin-top: 4%;
+    width: 15%;
+}
+
+main {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0% 5% 0%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 92%;
+    height: 100%;
+}
+
+.left-pane {
+    grid-column: 1/2;
+    height: 100%;
+}
+
+.right-pane {
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.right-pane .slogan {
+    padding-top: 7%;
+    width: 80%;
+    line-height: 3.5rem;
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    color: white;
+}
+
+.right-pane p {
+    padding-top: 5%;
+    width: 85%;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.right-pane a {}
+
+.btn {
+    margin-top: 4%;
+    padding: 2.5% 1% 2.5% 1%;
+    border-radius: 50px;
+    text-align: center;
+    width: 30%;
+    font-size: 1.2rem;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0px 2px 6px 3px hsl(258, 40%, 35%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-holder {
+    padding: 2%;
+    width: 40%;
+    size: 5rem;
+}
+
+.icon-holder i {
+    color: white;
+    border: 1px solid white;
+    size: 5rem;
+    border-radius: 50%;
+}
+
+.icon-holder i:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width:768px) {
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+    header {
+        width: 100%;
+    }
+    header img {
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 40%;
+    }
+    main {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0% 5% 0%;
+    }
+    .container {
+        display: grid;
+        /* grid-template-columns: auto auto; */
+        all: unset;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: 100%;
+    }
+    .left-pane {
+        grid-row: 1/2;
+        height: 100%;
+        padding: 10% 0% 0% 10%;
+        height: 70%;
+    }
+    .left-pane img {
+        width: 95%;
+    }
+    ;
+    .right-pane {
+        grid-row: 2/3;
+        height: 100%;
+        width: 100%;
+        margin-left: 10%;
+    }
+    .right-pane .slogan {
+        text-align: center;
+        padding-top: 7%;
+        width: 87%;
+        line-height: 3.5rem;
+        font-size: 2.4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+        color: white;
+    }
+    .right-pane p {
+        text-align: center;
+        padding-top: 5%;
+        width: 85%;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+    }
+    .right-pane a {}
+    .btn {
+        margin-top: 8%;
+        padding: 4% 1% 4% 1%;
+        border-radius: 50px;
+        text-align: center;
+        width: 60%;
+        font-size: 1.2rem;
+        background-color: white;
+        color: hsl(257, 40%, 49%);
+        box-shadow: 0px 2px 6px 3px hsl(258, 40%, 35%);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        margin-left: 15%;
+    }
+    .btn:hover {
+        cursor: pointer;
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .icon-holder {
+        padding: 2%;
+        width: 40%;
+        size: 5rem;
+    }
+    .icon-holder i {
+        color: white;
+        border: 1px solid white;
+        size: 5rem;
+        border-radius: 50%;
+    }
+    .icon-holder i:hover {
+        cursor: pointer;
+        background-color: hsl(300, 69%, 71%);
+        color: hsl(300, 69%, 71%);
+    }
+}

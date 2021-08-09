@@ -122,7 +122,9 @@ footer {
     align-items: center;
 }
 
-span {
+.fb,
+.twt,
+.insta {
     border: 1px solid white;
     border-radius: 50%;
     padding: 1%;
@@ -144,13 +146,14 @@ span {
     padding-left: 1.2%;
 }
 
-.icon-holder i {
+.icon-holder a {
     color: white;
     font-size: 1.5rem;
+    border: 2px, solid, white;
 }
 
-.icon-holder span:hover,
-.icon-holder span i:hover {
+.icon-holder a:hover,
+.icon-holder a i:hover {
     cursor: pointer;
     color: hsl(300, 69%, 71%);
     border-color: hsl(300, 69%, 71%);
@@ -260,7 +263,7 @@ span {
         align-items: center;
     }
     .icon-holder {
-        margin-top: 2%;
+        margin-top: 20%;
         margin-left: 15%;
         margin-bottom: 5%;
         width: 100%;
@@ -269,7 +272,9 @@ span {
         justify-content: center;
         align-items: center;
     }
-    span {
+    .fb,
+    .twt,
+    .insta {
         border: 1px solid white;
         border-radius: 50%;
         padding: 2%;
@@ -291,8 +296,8 @@ span {
         color: white;
         font-size: 1.5rem;
     }
-    .icon-holder span:hover,
-    .icon-holder span i:hover {
+    .icon-holder a:hover,
+    .icon-holder a i:hover {
         cursor: pointer;
         font-style: hsl(300, 69%, 71%);
     }
